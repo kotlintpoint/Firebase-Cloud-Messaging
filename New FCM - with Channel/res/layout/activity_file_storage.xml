@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".filestorage.FileStorageActivity"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Message"/>
+    <Button
+        android:id="@+id/btnWriteInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write Internal"
+        android:onClick="writeInternal"/>
+    <Button
+        android:id="@+id/btnReadInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Internal"
+        android:onClick="readInternal"/>
+    <Button
+        android:id="@+id/btnWriteExternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write External"
+        android:onClick="writeExternal"/>
+    <Button
+        android:id="@+id/btnReadExternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read External"
+        android:onClick="readExternal"/>
+</LinearLayout>
